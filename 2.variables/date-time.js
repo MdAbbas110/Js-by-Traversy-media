@@ -36,3 +36,12 @@ x = date.toLocaleString('default', {
     timeZone: 'america/new_yourk'
 
 })
+
+let datr
+
+x = datr.tolocaleString('default', {
+    year: 'long',
+    month: 'numaric',
+    days: 'numaric',
+    hour: 'numeric',
+})
