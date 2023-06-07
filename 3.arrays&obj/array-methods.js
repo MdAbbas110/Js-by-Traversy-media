@@ -15,3 +15,5 @@ x = arr.slice(1,4) // stop before the last index and slicec wont affect the orig
 x = arr.splice(2,3) // splice chnage the real array deleting the original array
 x = arr.splice(2,5).reverse().toString().charAt(0)
 console.log(x,arr )
+
+// hellow there are planti of ways tha
