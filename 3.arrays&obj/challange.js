@@ -2,7 +2,7 @@ let x;
 let arr = [1,2,3,4,5]
 x= arr.reverse().unshift(6).push(0)
 x = arr
-x= arr.
+x= arr;
 
 //console.log(x,arr);
 
