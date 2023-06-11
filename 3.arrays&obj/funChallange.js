@@ -86,3 +86,18 @@ if(Object.keys(obj).length > 0){
 }else {
     console.log('there is no name');
 }
+
+// logical assigments
+
+a = 0 //anything falsy like null undifed or 0 it won't let it print and assign the values to it by var ||= 10  
+
+a ||= 10
+
+console.log(a);
+
+// Nulish cololesan to check the value we are getting is unfided ot null nullish will assing the value you provide
+
+let api = undefined
+
+api ??= 20;
+console.log(api);
