@@ -14,11 +14,20 @@
 function minMax (arr){
     const min = Math.min(...arr)
     const max = Math.max(...arr)
-    return {
+    return { //return will basically return whatever form of output you want to get its object or array
         min,
         max
     }
 }
 
-let array = minMax([1,23,4,56,7,60,32])
-console.log(array);
+//let array = minMax([1,23,4,56,7,60,32])
+//console.log(array);
+
+//challange 3 with ifie and arrow function
+
+((length,width)=>{
+    const area = length* width
+
+    const output = `The area of ${length} and ${width} is ${area}`
+    console.log(output);
+})(34,54)
