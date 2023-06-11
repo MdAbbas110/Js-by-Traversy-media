@@ -58,4 +58,31 @@ function calculator(num1,num2,operator){
     return result
 }
 
-calculator(5,2,'*=a')
+//calculator(5,2,'*=a')
+
+
+const child = 0
+
+if(!isNaN(child)){
+    console.log('you have this much child '+ child);
+}else {
+    console.log('provide the child numbers');
+}
+
+const arr = []
+
+if(arr.length > 0){
+    console.log('list of post');
+}else {
+    console.log('there is no one');
+}
+
+//for empty obj
+
+const obj = {}
+
+if(Object.keys(obj).length > 0){
+    console.log('list of names');
+}else {
+    console.log('there is no name');
+}
