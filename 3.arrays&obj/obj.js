@@ -40,3 +40,16 @@ age >= 32 ? 'go to hajj' : age >=22 ? 'go to karbala' : 'go to ajmer'
 let auth = true
 
 auth && console.log('this just print the valuse straight forward welc mesg');
+
+//Using the `&&` operator as a shorthand is a popular thing to do in 
+//React templates. Many times, you will see something like:
+
+JavaScript
+{!loading && (
+  <Fragment>Some UI</Fragment>
+)}
+
+javascript
+{!loading && (
+    <Fragment>Some UI</Fragment>
+)}
