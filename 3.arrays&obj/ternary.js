@@ -31,3 +31,15 @@ example:
 
 ```JavaScript
 auth ? console.log('Welcome to the dashboard') : null;
+
+const canDrink =
+  age >= 21
+    ? 'You can drink!'
+    : age >= 18
+    ? 'You can have 1 beer'
+    : 'You can not drink';
+
+console.log(canDrink);
+```
+
+## Using `&&` as a shorthand
