@@ -43,3 +43,16 @@ console.log(canDrink);
 ```
 
 ## Using `&&` as a shorthand
+
+
+const canDrink =
+  age >= 21
+    ? 'You can drink!'
+    : age >= 18
+    ? 'You can have 1 beer'
+    : 'You can not drink';
+
+console.log(canDrink);
+```
+
+## Using `&&` as a shorthand
