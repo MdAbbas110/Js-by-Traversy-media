@@ -24,3 +24,10 @@ console.log(redirect);
 //if we dont wana use the else we can put : null but more short handed we can logical
 
 auth && console.log('welcome to board') // uae a lot with react also a ternary
+
+//If your else(semi-colon) in a ternary is going to be null or you 
+'t need an else, you can use the `&&` operator instead. Here is an 
+example:
+
+```JavaScript
+auth ? console.log('Welcome to the dashboard') : null;
