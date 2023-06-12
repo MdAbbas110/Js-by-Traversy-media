@@ -53,3 +53,11 @@ javascript
 {!loading && (
     <Fragment>Some UI</Fragment>
 )}
+
+const auth2 = true;
+
+const redirect = auth
+  ? (alert('Welcome To The Dashboard'), '/dashboard')
+  : (alert('Access Denied'), '/login');
+
+console.log(redirect);
