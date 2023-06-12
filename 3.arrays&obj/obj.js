@@ -34,3 +34,9 @@ console.log(canDrink);
 age >=21 ? 'can drink and die': age>=18 ?'can just drink one' : 'you go have milk'
 
 age >= 32 ? 'go to hajj' : age >=22 ? 'go to karbala' : 'go to ajmer'
+
+// here is if you  dont want to like print the else part just need to pass a condition use &&
+
+let auth = true
+
+auth && console.log('this just print the valuse straight forward welc mesg');
