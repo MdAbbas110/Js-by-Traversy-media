@@ -139,4 +139,28 @@ const cWord = myName.map((char) => {
     return char[0].toUpperCase() + char.slice(1, char.length)
 })
 
-console.log(cWord);
+// console.log(cWord);
+
+// new array find() method to seach an array and go through on eash
+
+const pplName = [
+    'Abbas',
+    'Rhabar',
+    'Abis',
+    'Shazan',
+    'Fazal'
+]
+//.find() this method use to take the function and a parametere that will ittrate over all
+
+const finding = pplName.find(people => people.startsWith('S'))
+// console.log(finding);
+
+//to find the dublicate values in an array ussing the set
+// *set is a special data Structure that only holds the uniquew values
+
+const arr5 = [23,43,44,43,67,23,55]
+
+const withoutDuplicate = Array.from(new Set(arr5)) // in the set parameter we pass the array wana check duplicate in returning the object
+console.log(withoutDuplicate);
+//use array.from (then passs the new Set or new Map)
+//but remeber the Set method will return the object so we want out array back to achive that we can use Array.from()
