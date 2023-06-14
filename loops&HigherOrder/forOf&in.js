@@ -164,3 +164,6 @@ const withoutDuplicate = Array.from(new Set(arr5)) // in the set parameter we pa
 console.log(withoutDuplicate);
 //use array.from (then passs the new Set or new Map)
 //but remeber the Set method will return the object so we want out array back to achive that we can use Array.from()
+
+// we have learned about the Dom and its few usefull methoods
+// list will be if you need to consider it in the project usege u can reffer to the Mdn docs
