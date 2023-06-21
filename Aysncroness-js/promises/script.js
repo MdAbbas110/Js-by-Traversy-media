@@ -38,8 +38,27 @@ setTimeout(()=>{
      
      //.then() will handel the resolve
 getUser
-    .then((user)=>console.log(user))
-    .catch((error) => console.log(error))//catch() use to handle error
-    .finally(() => console.log('promise is running force fully'))
+    .then((user)=>{
+       console.log(user);
+       return user.name 
+    })
+    .then((name)=>{
+        console.log(name);
+        return name.lenght
+    })
+    .then((lent)=>{
+        console.log(lent);
+    }) // if error no .then will run just .catch will run
+    .catch((error) => {
+        console.log(error)
+        return 123 // we can return from catch as well
+    })// and >then afterthe catch will run always no matter what
+    .then((x)=>{
+        console.log(`i will always run ${x}`);
+    })
+    
+    
+    //catch() use to handle error
+    // .finally(() => console.log('promise is running force fully'))
 // finally is use to pass to exicute the promise any way either resolve or rejected
  
