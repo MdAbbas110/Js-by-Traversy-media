@@ -55,8 +55,7 @@ getUser
     })// and >then afterthe catch will run always no matter what
     .then((x)=>{
         console.log(`i will always run ${x}`);
-    })
-    
+    })    
     
     //catch() use to handle error
     // .finally(() => console.log('promise is running force fully'))
