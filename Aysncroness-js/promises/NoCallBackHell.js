@@ -54,3 +54,4 @@ Promise.all([moviePromises, dummy, actorPromises, directorPromises])
 console.log(data);
 })
 .catch(error => console.log(error))
+// by this we are concluding that there are sevral way
