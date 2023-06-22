@@ -12,7 +12,7 @@ const promise = new Promise((resolve,reject)=>{
 
 async function getPromise() {
     const response = await promise;
-    console.log(response);
+    //console.log(response);
 }
 getPromise()
 
@@ -41,4 +41,11 @@ const getpost = async () => {
 }
 getpost()
 
+//* using the try catch with asysc await catch use to caught the uncaiught error on the console
 
+try {
+    console.log(y);
+ console.log(x);
+} catch (err) {
+    console.log(`Error ${err}`);
+}
