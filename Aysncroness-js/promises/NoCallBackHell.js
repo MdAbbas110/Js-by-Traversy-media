@@ -1,6 +1,6 @@
 function getData(endpoint) {
     return new Promise((resolve, reject) =>{
-        const xhr = new XMLHttpRequest();//alwas use new keyW here XHR
+        const xhr = new XMLHttpRequest();
         xhr.open('GET', endpoint)
 
         xhr.onreadystatechange = function () {
