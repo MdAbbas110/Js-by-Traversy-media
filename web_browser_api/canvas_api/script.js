@@ -19,7 +19,15 @@ ctx.fill()
 ctx.beginPath()
 //line don't takes the fillStyle for color it take strokeStyle
 ctx.strokeStyle = 'blue'
-ctx.lineWidth = 5
+ctx.lineWidth = 5 
 ctx.moveTo(10, 10)
 ctx.lineTo(300,300)
 ctx.stroke() //that draws on the page
+
+//to draw text with the canvas fill text 
+ctx.font = '30px Arial'
+ctx.lineWidth = 1;
+ctx.fillStyle = 'blue'
+ctx.strokeStyle = 'red'
+ctx.fillText('BULB', 300, 100, 300)
+ctx.strokeText('beshumar', 300, 150, 300)
