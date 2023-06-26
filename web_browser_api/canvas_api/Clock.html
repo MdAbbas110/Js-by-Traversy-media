@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Clock</title>
+  <style>
+    body{
+        background-color: #ccc;
+    }
+    canvas {
+      border: 1px solid #000;
+      margin: 4rem 28rem;
+
+
+    }
+  </style>
+</head>
+<body>
+  <canvas id="clockCanvas" width="400" height="400"></canvas>
+
+  <script>
+    // Get the canvas element
+    const canvas = document.getElementById('clockCanvas');
+    const context = canvas.getContext('2d');
+
+    // Define the center coordinates and radius of the clock
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+    const radius = 150;
+
+    // Function to draw the clock
+    function drawClock() {
+      // Clear the canvas
+      context.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Get the current time
+      const now = new Date();
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+      const seconds = now.getSeconds();
+
+      // Draw the outer circle
+      context.beginPath();
+      context.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+      context.stroke();
+
+      // Draw the hour hand
+      const hourAngle = (hours % 12 + minutes / 60 + seconds / 3600) * (Math.PI / 6) - Math.PI / 2;
+      drawHand(hourAngle, radius * 0.5, 8);
+
+      // Draw the minute hand
+      const minuteAngle = (minutes + seconds / 60) * (Math.PI / 30) - Math.PI / 2;
+      drawHand(minuteAngle, radius * 0.7, 4);
+
+      // Draw the second hand
+      const secondAngle = (seconds + now.getMilliseconds() / 1000) * (Math.PI / 30) - Math.PI / 2;
+      drawHand(secondAngle, radius * 0.9, 2);
+
+      // Draw the hour numbers
+      for (let i = 1; i <= 12; i++) {
+        const numberAngle = (i - 3) * (Math.PI / 6);
+        const numberX = centerX + Math.cos(numberAngle) * (radius * 0.85);
+        const numberY = centerY + Math.sin(numberAngle) * (radius * 0.85);
+
+        context.fillStyle = '#000';
+        context.font = 'bold 16px Arial';
+        context.textAlign = 'center';
+        context.textBaseline = 'middle';
+        context.fillText(i, numberX, numberY);
+      }
+
+      // Request the next animation frame
+      requestAnimationFrame(drawClock);
+    }
+
+    // Function to draw a clock hand
+    function drawHand(angle, length, width) {
+      context.beginPath();
+      context.lineWidth = width;
+      context.lineCap = 'round';
+      context.moveTo(centerX, centerY);
+      context.lineTo(centerX + Math.cos(angle) * length, centerY + Math.sin(angle) * length);
+      context.stroke();
+    }
+
+    // Start drawing the clock
+    drawClock();
+  </script>
+</body>
+</html>
