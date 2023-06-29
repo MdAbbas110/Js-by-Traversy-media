@@ -1,0 +1,12 @@
+when we set the class object and its propertis 
+there are certain flags we get that can be set to each properties and it can be chanded weather it will be accessable out of the class or not or can be modifiable as wall
+
+1. configirable = that the properety will be able to delete it or modify it
+
+2.emeurable = that is if someonee put the forEach loop or so it won't be allowed on that propertiy
+
+3.value - its the actual value of the properties
+
+4. writeable = its read only not writeable
+
+// and u default its use to be true on the properties
