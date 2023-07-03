@@ -1,0 +1,41 @@
+# HoHow Web Works - Big picture
+
+when we search any website on the browser that will search for the severe associated with with website 
+
+the server will returns back the source code that and basically our browser works as a interpreter that will then interprets the code and shows the page 
+
+## How browser will find a website:
+
+each server holds an IP address i.e Internet protocol that  looks like 172:34:26:58 this is not human readable form if we want we can use it directly as it is but no one do that But Domain name good
+
+SO the first thing that will be done here by the browser is when we enter a domain name is Browser will contact DNS i.e Domain name System which is basically like a huge dictionary where each domain name is mapped to an IP. Then that DNS will translate that Domain name into an IP address this ip will return to the browser and by that it can find the server which has that ip address 
+
+On the server that mostly have static code or generate the the source code for website and sends back to the browser and the website now displays on it basic how it work in nut shell
+
+## Request and Response
+
+When we searched a url on a browser it makes a request it can be of many type like get and put browser mention the type It can also contain meta date ‘data about the data’ by header
+
+And what we get back from server is response that holds the data package. It holds the meta data and most importantly the Html code that should be render 
+
+## HTTP standard for data req & resp
+
+Http provides the standards that how this request and response will gonna happen rules basically
+
+HTTPs similar to http but the modern where all the data of website is encrypted it means what reqt user is sending and what resp by the server will be Encrypted that only browser and server knows how to decrypt it . If someone try to spy to your connection that will just show some unreadable content 
+
+## Server side rendering
+
+While responding to a reqt server generates some data that can be done using nodeJs Django php and other frame works as well
+
+## Story in case of Mobile applications
+
+So in the apps this reqt response works differently like Its not aways means that getting a html side in a response . making connection on the internet can be for any thing, for a photo that is not in your phone or anything holds in a computer acting as a server holds the information .
+
+In mobile app it want the JSON file in response that has a collection of content on the web with all the recourse that can be parse and be displayed.
+
+Example Instagram its code is written in such a way that it can parse the json object and give the user back with all the new post and stuff
+
+### So the data format can be flexible but the whole idea that code running on the server and running on our device that core idea is always the same
+
+### Now there are some more tech such as real time connection where user just request but server pushes the data each time without making connections every time such as WEB SOCKETS
