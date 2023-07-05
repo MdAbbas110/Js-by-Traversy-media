@@ -1,8 +1,8 @@
-const axios = require('axios') 
+import { getPost, makeMoney } from "./Es6module";
 
-async function getPost() {
-    const res = await axios.get('https://jsonplaceholder.typicode.com/posts/1')
-    console.log(res.data);
-}
+console.log(123);
+console.log(makeMoney(110));
 
-getPost()
+
+
+
