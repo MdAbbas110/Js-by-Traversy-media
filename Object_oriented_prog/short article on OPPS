@@ -1,0 +1,12 @@
+A short article on OOP:
+using opps we can create a code that can be reusable and clean to read,
+create a class whth a name that will Start with Upper letter and it consist of the cunstructor that is same as function takes parameter and and the body of the cunstroctor
+
+This. keyword is only confusing thing in the classs this refer to the current object that is been used.
+
+affter creating the blue print of any class we can use that class as object creating it's instance and there can be multiple instance of a class this helps in mentainable code
+
+the classses contain the methods that are jsut nameing conventinon under the hood its just the same function but in class we reffer it as a method
+
+there can be a private method and public methods as well to define there can be two way one is _Name and Morden way is to use number sign #Name this will prevent the methods 
+to be accesed by out side the class
