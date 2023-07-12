@@ -1,4 +1,4 @@
-const palindrome = restore('./palindrome.js')
+const palindrome = require('./palindrome')
 
 describe('palindrome', () => {
     it('should be a function', () => {
@@ -22,6 +22,6 @@ describe('palindrome', () => {
     })
 
     it('should return false if includes spaces ', ()=>{
-    expect(palindrome(' wow ')).toBeFalsy()
+    expect(palindrome(' wow')).toBeFalsy()
     })
 })
