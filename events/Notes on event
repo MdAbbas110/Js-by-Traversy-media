@@ -1,0 +1,4 @@
+event are special type of incident that comes in action if something is been clicked scrolled or other like page load 
+we can add interactively on page by events and can use it as to do some action 
+
+there are multiple events onClick keyup etc all takes a call back function to perform an action 
