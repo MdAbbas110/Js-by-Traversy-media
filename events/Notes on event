@@ -1,4 +1,6 @@
 event are special type of incident that comes in action if something is been clicked scrolled or other like page load 
 we can add interactively on page by events and can use it as to do some action 
 
-there are multiple events onClick keyup etc all takes a call back function to perform an action 
+there are multiple events onClick keyup etc all takes a call back function to perform an action.
+
+There are ways to added event that we can create a function and just refer that function name in the event call back, need not to call the function() just reffer the name and the call stack will do it own
