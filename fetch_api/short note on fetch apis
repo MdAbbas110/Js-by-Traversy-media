@@ -1,0 +1,5 @@
+Fetch api helps use to bring the data on our website that are mostly in json format now a days
+fetch takes a request and wait for the response 
+
+if the response is ok i.e resolve fetch will update it's call stack and then render the data
+if the req is reject in that case the progam handle it in the catch block and do some other stuff 
